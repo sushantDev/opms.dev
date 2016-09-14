@@ -25,12 +25,12 @@ Route::get('/contact', function () {
     //return view('welcome');
     return ("Hey there from contact page!!!");
 });
-
+*/
 Route::get('/post/{id}/{name}', function ($id,$name) {
     //return view('welcome');
     return ("The post number is "). $id . " ". $name;
 });
-
+/*
 Route::get('admin/post/examples', array('as'=> 'admin.home' ,function(){
     $url= route('admin.home');
 
@@ -55,3 +55,20 @@ Route::get('/insert', function(){
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+
+Route::resource('/admin/users', 'AdminUsersController');
+
+Route::get('/admin', function(){
+
+    return view ('Layouts.admin');
+
+});
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('contact', function(){
+
+    return view ('contact');
+});
