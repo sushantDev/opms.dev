@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
    // return ("Hey there!!!");
 });
+
 /*
 Route::get('/about', function () {
     //return view('welcome');
@@ -61,7 +62,7 @@ Route::resource('/admin/users', 'AdminUsersController');
 
 Route::get('/admin', function(){
 
-    return view ('Layouts.admin');
+    return view ('admin.index');
 
 });
 Route::auth();
