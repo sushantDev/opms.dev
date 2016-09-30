@@ -60,9 +60,9 @@
                     </div>
 
                     <div class="form-group">
-                    {!! Form::label('file','Profile pic:',['class'=>'col-sm-2 control-label']) !!}
+                    {!! Form::label('photo_id','Profile pic:',['class'=>'col-sm-2 control-label']) !!}
 
-                        {!! Form::file('file', null, ['class'=>'form-control']) !!}
+                        {!! Form::file('photo_id', null, ['class'=>'form-control']) !!}
 
                     </div>
 
