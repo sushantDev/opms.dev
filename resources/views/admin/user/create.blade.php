@@ -27,7 +27,7 @@
             </header>
             <div class="panel-body">
 
-                {!! Form::open(['method'=>'POST','action'=>'AdminUsersController@store'],['class'=>'form-validate form-horizontal']) !!}
+                {!! Form::open(['method'=>'POST','action'=>'AdminUsersController@store','files'=>true],['class'=>'form-validate form-horizontal']) !!}
                     <div class="form-group">
 
                         {!! Form::label('name','Name:',['class'=>'control-label col-lg-2']) !!}
@@ -53,10 +53,17 @@
                     </div>
 
                     <div class="form-group">
-                    {!! Form::label('status','Status:',['class'=>'control-label col-lg-2']) !!}
+                    {!! Form::label('is_active','Status:',['class'=>'control-label col-lg-2']) !!}
                     <div class="col-sm-10">
-                        {!! Form::select('status',array(1 => 'Active', 0 => 'Not Active'), 0, ['class'=>'form-control']) !!}
+                        {!! Form::select('is_active',array(1 => 'Active', 0 => 'Not Active'), 0, ['class'=>'form-control']) !!}
                     </div>
+                    </div>
+
+                    <div class="form-group">
+                    {!! Form::label('file','Profile pic:',['class'=>'col-sm-2 control-label']) !!}
+
+                        {!! Form::file('file', null, ['class'=>'form-control']) !!}
+
                     </div>
 
                     <div class="form-group">
