@@ -58,7 +58,7 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 
-Route::resource('/admin/users', 'AdminUsersController');
+
 
 
 Route::get('/admin', function(){
@@ -68,9 +68,19 @@ Route::get('/admin', function(){
 });
 Route::auth();
 
+Route::group(['middleware'=> 'admin'], function(){
+
+    Route::resource('/admin/users', 'AdminUsersController');
+
+
+});
+
 Route::get('/home', 'HomeController@index');
 
 Route::get('contact', function(){
 
     return view ('contact');
 });
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

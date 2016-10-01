@@ -223,10 +223,10 @@
             <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="{{ URL::asset('img/avatar1_small.jpg') }}">
+
                                 
                             </span>
-                    <span class="username">Jenifer Smith</span>
+                    <span class="profile-ava">{{ Auth::user()->name }} </span>
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu extended logout">
@@ -244,7 +244,8 @@
                         <a href="#"><i class="icon_chat_alt"></i> Chats</a>
                     </li>
                     <li>
-                        <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                        <a href="{{ url('/logout') }}"><i class="icon_key_alt"></i> Log Out</a>
+
                     </li>
                     <li>
                         <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>

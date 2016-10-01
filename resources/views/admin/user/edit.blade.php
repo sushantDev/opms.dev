@@ -8,10 +8,10 @@
         <!--overview start-->
 <div class="row">
     <div class="col-lg-12">
-        <h3 class="page-header"><i class="fa fa-laptop"></i>Create User</h3>
+        <h3 class="page-header"><i class="fa fa-laptop"></i>Edit User</h3>
         <ol class="breadcrumb">
-            <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-            <li><i class="fa fa-laptop"></i>Dashboard</li>
+            <li><i class="icon_profile"></i><a href="index.html">Users</a></li>
+            <li><i class="fa fa-laptop"></i>Edit User</li>
         </ol>
     </div>
 </div>
@@ -84,17 +84,34 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class ="form-group">
 
-                    {!! Form::submit('Create User', ['class'=>'btn btn-primary']) !!}
+                </div>
+                <div class="panel-body>
+                    <div class="btn-group btn-group-justified">
+
+                        {!! Form::submit('Update User', ['class'=>'btn btn-primary col-sm-2']) !!}
+
+                {!! Form::close() !!}
+
+                        {!! Form::open(['method'=>'DELETE','action'=>['AdminUsersController@destroy', $user->id]]) !!}
+
+
+
+                                    {!! Form::submit('Delete User', ['class'=>'btn btn-danger col-sm-2']) !!}
+
+
+
+                        {!! Form::close() !!}
+                    </div>
                 </div>
 
 
-                {!! Form::close() !!}
 
                 @include('includes.form_error')
 
             </div>
+
         </section>
     </div>
 
