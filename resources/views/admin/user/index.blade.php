@@ -10,8 +10,8 @@
     <div class="col-lg-12">
         <h3 class="page-header"><i class="fa fa-laptop"></i> Users</h3>
         <ol class="breadcrumb">
-            <li><i class="icon_profile"></i><a href="index.html">All Users</a></li>
-            <li><i class="fa fa-laptop"></i>Dashboard</li>
+            <li><i class="icon_profile"></i><a href="index.html">Users</a></li>
+            <li><i class="fa fa-laptop"></i> All Users</li>
         </ol>
     </div>
 

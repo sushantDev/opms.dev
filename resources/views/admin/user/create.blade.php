@@ -61,9 +61,9 @@
 
                     <div class="form-group">
                     {!! Form::label('photo_id','Profile pic:',['class'=>'col-sm-2 control-label']) !!}
-
-                        {!! Form::file('photo_id', null, ['class'=>'form-control']) !!}
-
+                        <div class="col-sm-10">
+                            {!! Form::file('photo_id', ['class'=>'form-control']) !!}
+                        </div>
                     </div>
 
                     <div class="form-group">
