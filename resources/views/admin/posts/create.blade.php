@@ -35,7 +35,7 @@
                         <div class="form-group">
                             {!! Form::label('category_id','Category:',['class'=>'col-sm-2 control-label']) !!}
                                 <div class="col-sm-10">
-                                    {!! Form::select('category_id',array(1=> 'PHP',0=>'Javascript'), null, ['class'=>'form-control']) !!}
+                                    {!! Form::select('category_id',[''=> 'Choose Categories'] + $categories, null, ['class'=>'form-control']) !!}
                                 </div>
                         </div>
 
