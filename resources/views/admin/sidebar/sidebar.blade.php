@@ -30,13 +30,17 @@
                     <li><a class="" href="{{route('admin.posts.create')}}">Create Posts</a></li>
 
                 </ul>
-            </li>
+
             <li>
-                <a class="" href="widgets.html">
+                <a class="" href="{{route('admin.categories.index')}}">
                     <i class="icon_genius"></i>
-                    <span>Widgets</span>
+                    <span> Categories</span>
+
                 </a>
+
             </li>
+
+
             <li>
                 <a class="" href="chart-chartjs.html">
                     <i class="icon_piechart"></i>
