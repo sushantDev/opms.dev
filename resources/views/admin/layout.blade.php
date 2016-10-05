@@ -10,7 +10,7 @@
 
     <title>@yield('user') Dashboard</title>
 
-
+    @yield('styles')
     <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
 
@@ -93,6 +93,8 @@
 <script src="{{ URL::asset('js/charts.js') }}"></script>
 <script src="{{ URL::asset('js/sparklines.js') }}"></script>
 <script src="{{ URL::asset('js/jquery.slimscroll.min.js') }}"></script>
+
+@yield('scripts')
 
 </body>
 </html>

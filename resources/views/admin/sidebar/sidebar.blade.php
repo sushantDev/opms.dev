@@ -40,6 +40,20 @@
 
             </li>
 
+            <li class="sub-menu">
+                <a href="javascript:;" class="">
+                    <i class="icon_documents_alt"></i>
+                    <span>Media</span>
+                    <span class="menu-arrow arrow_carrot-right"></span>
+                </a>
+                <ul class="sub">
+                    <li><a class="" href="{{route('admin.media.index')}}">All Media</a></li>
+                    <li><a class="" href="{{route('admin.media.create')}}">Upload Media</a></li>
+
+                </ul>
+
+            <li>
+
 
             <li>
                 <a class="" href="chart-chartjs.html">
@@ -61,18 +75,7 @@
                 </ul>
             </li>
 
-            <li class="sub-menu">
-                <a href="javascript:;" class="">
-                    <i class="icon_documents_alt"></i>
-                    <span>Polls</span>
-                    <span class="menu-arrow arrow_carrot-right"></span>
-                </a>
-                <ul class="sub">
-                    <li><a class="" href="{{route('admin.polls.index')}}">All Polls</a></li>
-                    <li><a class="" href="{{route('admin.polls.create')}}">Create Poll</a></li>
 
-                </ul>
-            </li>
 
         </ul>
         <!-- sidebar menu end-->
