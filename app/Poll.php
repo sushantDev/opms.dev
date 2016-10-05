@@ -4,15 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Poll extends Model
 {
     //
     protected $fillable = [
 
         'category_id',
         'photo_id',
-        'title',
-        'body'
+        'question',
+        'starts',
+        'ends'
 
     ];
 
@@ -36,12 +37,4 @@ class Post extends Model
 
 
     }
-
-    public function polls(){
-
-        return $this->belongsTo('App\Poll');
-
-
-    }
-
 }
