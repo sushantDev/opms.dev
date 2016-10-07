@@ -37,9 +37,9 @@ class Post extends Model
 
     }
 
-    public function polls(){
+    public function comments(){
 
-        return $this->belongsTo('App\Poll');
+        return $this->hasMany('App\Comment');
 
 
     }
