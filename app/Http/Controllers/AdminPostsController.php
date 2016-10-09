@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\PostsCreateRequests;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class AdminPostsController extends Controller
 {
@@ -64,7 +65,6 @@ class AdminPostsController extends Controller
             $input['photo_id'] = $photo -> id;
         }
         $user->posts()->create($input);
-
         return redirect('/admin/posts');
 
     }
@@ -78,6 +78,11 @@ class AdminPostsController extends Controller
     public function show($id)
     {
         //
+
+        $posts = Post::all();
+        return view('admin.posts.view', compact('posts'));
+
+
     }
 
     /**

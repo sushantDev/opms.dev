@@ -12,9 +12,14 @@
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
    // return ("Hey there!!!");
 });
+Route::get('/welcome', function () {
+    return view('welcome');
+    // return ("Hey there!!!");
+});
+
 
 /*
 Route::get('/about', function () {

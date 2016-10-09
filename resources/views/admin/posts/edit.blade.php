@@ -54,6 +54,12 @@
                             {!! Form::file('photo_id',['class'=>'form-control']) !!}
                         </div>
                     </div>
+                    <div class="form-group">
+                        {!! Form::label('slug','Slug',['class'=>'col-sm-2 control-label']) !!}
+                        <div class="col-sm-10">
+                            {!! Form::text('slug', null ,['class'=>'form-control']) !!}
+                        </div>
+                    </div>
 
                     <div class="form-group">
                         {!! Form::label('body','Description:',['class'=>'col-sm-2 control-label']) !!}
