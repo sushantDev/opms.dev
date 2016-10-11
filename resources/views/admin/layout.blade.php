@@ -13,7 +13,6 @@
     @yield('styles')
     <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
-
     <link href="{{ URL::asset('css/bootstrap-theme.css') }}" rel="stylesheet">
 
     <link href="{{ URL::asset('css/elegant-icons-style.css') }}" rel="stylesheet" />
@@ -93,6 +92,7 @@
 <script src="{{ URL::asset('js/charts.js') }}"></script>
 <script src="{{ URL::asset('js/sparklines.js') }}"></script>
 <script src="{{ URL::asset('js/jquery.slimscroll.min.js') }}"></script>
+
 
 @yield('scripts')
 
