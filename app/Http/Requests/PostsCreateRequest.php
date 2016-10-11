@@ -28,7 +28,7 @@ class PostsCreateRequest extends Request
             'title'       =>'required',
             'category_id' => 'required',
             'photo_id'    =>'required',
-            'slug'    =>'required',
+            'slug'        =>'required | unique:posts, slug',
             'body'        =>'required',
 
 

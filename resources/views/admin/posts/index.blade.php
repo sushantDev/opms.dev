@@ -43,7 +43,7 @@
                 <td>{{$post->category ? $post->category->name : 'Uncategorized'}}</td>
                 <td>{{$post->title}}</td>
                 <td>{{str_limit($post->body, 20)}}</td>
-                <td><a href="{{route('admin.posts.show', $post->id)}}">{{$post->slug ? $post->slug : 'No slug'}}</a></td>
+                <td><a href="{{route('blog.single', $post->slug)}}">{{$post->slug ? $post->slug : 'No slug'}}</a></td>
                 <td>{{$post->created_at->diffForhumans()}}</td>
                 <td>{{$post->updated_at->diffForhumans()}}</td>
                 <td><div class="btn-group">

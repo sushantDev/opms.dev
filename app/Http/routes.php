@@ -75,6 +75,8 @@ Route::auth();
 
 Route::group(['middleware'=> 'admin'], function(){
 
+
+    Route::get('/admin/posts/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])-> where ('slug','[\w\d\-\_]+');
     Route::resource('/admin/users', 'AdminUsersController');
     Route::resource('/admin/posts', 'AdminPostsController');
     Route::resource('/admin/categories','AdminCategoriesController');
